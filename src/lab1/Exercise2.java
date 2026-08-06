@@ -1,14 +1,14 @@
+package lab1;
+
 import java.util.Scanner;
 
-public class Exercise1 {
+public class Exercise2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int tong = 0;
+        double tong = 0;
         for (int i = 1; i <= n; i++) {
-            if (i % 2 == 0) {
-                tong = tong + i;
-            }
+            tong = tong + (1.0 / i);
         }
         System.out.println(tong);
         sc.close();

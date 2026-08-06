@@ -1,12 +1,16 @@
+package lab1;
+
 import java.util.Scanner;
 
-public class Exercise2 {
+public class Exercise1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        double tong = 0;
+        int tong = 0;
         for (int i = 1; i <= n; i++) {
-            tong = tong + (1.0 / i);
+            if (i % 2 == 0) {
+                tong = tong + i;
+            }
         }
         System.out.println(tong);
         sc.close();
