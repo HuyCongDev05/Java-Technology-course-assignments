@@ -1,4 +1,4 @@
-package lab14;
+package lab2.Exercise14;
 
 public class CBGV extends Nguoi {
     private final double luongCung;
