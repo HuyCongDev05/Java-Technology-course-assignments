@@ -33,26 +33,26 @@ public class Exercise3 extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new GridLayout(4, 1, 5, 5));
 
-        // Dòng 1: Nhập N
+        // Nhập N
         JPanel panel1 = new JPanel(new FlowLayout());
         panel1.add(new JLabel("Nhập N:"));
         txtN = new JTextField(10);
         panel1.add(txtN);
 
-        // Dòng 2: Nút Tính
+        // Nút Tính
         JPanel panel2 = new JPanel(new FlowLayout());
         btnCalculate = new JButton("Tính");
         btnCalculate.addActionListener(e -> calculatePrimeSum());
         panel2.add(btnCalculate);
 
-        // Dòng 3: Hiển thị tiến độ (%)
+        // Hiển thị tiến độ (%)
         JPanel panel3 = new JPanel(new FlowLayout());
         panel3.add(new JLabel("Tiến độ:"));
         txtProgress = new JTextField(10);
         txtProgress.setEditable(false);
         panel3.add(txtProgress);
 
-        // Dòng 4: Kết quả
+        // Kết quả
         JPanel panel4 = new JPanel(new FlowLayout());
         lblResult = new JLabel("Kết quả sẽ hiển thị ở đây");
         panel4.add(lblResult);
